@@ -1,6 +1,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
         <title>RedStore | Ecommerce Website Design</title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css">
@@ -9,23 +10,24 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200&display=swap" rel="stylesheet">
     </head>
     <body>
-        <h1>header</h1>
+
     <div class="header">
         <div class="container">
          <div class="navbar">
           <div class="logo">
-              <img src="C:\Users\HP\Desktop\ecommerce web\images\logo.png" alt="logo" width="125px">
+              <img src="C:\Users\HP\Desktop\ecommerce\images\logo.png" alt="logo" width="125px">
           </div>
           <nav>
-              <ul>
+              <ul id="MenuItems">
                   <li><a href="">Home</a></li>
                   <li><a href="">Products</a></li>
                   <li><a href="">About</a></li>
-                  <li><a href=""> </a></li>
+                  <li><a href=""> Contact</a></li>
                   <li><a href="">Account</a></li>
               </ul>
           </nav>
-          <img src="C:\Users\HP\Desktop\ecommerce web\images\cart.png" alt="" width="40px" height="30px">
+          <img src="C:\Users\HP\Desktop\ecommerce\images\cart.png" alt="" width="40px" height="30px">
+          <img src="C:\Users\HP\Desktop\ecommerce\images\menu.png" alt="" class="menu-icon" onclick="menutoggle()">
        </div> 
        <div class="row">
            <div class="col-2">
@@ -37,7 +39,7 @@
               <a href="" class="btn">Explore Now &#8594</a>
            </div>
            <div class="col-2">
-              <img src="C:\Users\HP\Desktop\ecommerce web\images\image1.png" alt="">
+              <img src="C:\Users\HP\Desktop\ecommerce\images\image1.png" alt="">
            </div>
        </div>
       </div> 
@@ -47,13 +49,13 @@
         <div class="small-container">
          <div class="row">
             <div class="col-3">
-                <img src="C:\Users\HP\Desktop\ecommerce web\images\category-1.jpg" alt="" >
+                <img src="C:\Users\HP\Desktop\ecommerce\images\category-1.jpg" alt="" >
             </div>
             <div class="col-3">
-                <img src="C:\Users\HP\Desktop\ecommerce web\images\category-2.jpg" alt="">
+                <img src="C:\Users\HP\Desktop\ecommerce\images\category-2.jpg" alt="">
             </div>
             <div class="col-3">
-                <img src="C:\Users\HP\Desktop\ecommerce web\images\category-3.jpg" alt="">
+                <img src="C:\Users\HP\Desktop\ecommerce\images\category-3.jpg" alt="">
             </div>
          </div>
         </div>
@@ -63,7 +65,7 @@
         <h2 class="title">Featured Products</h2>
         <div class="row">
             <div class="col-4">
-                <img src="C:\Users\HP\Desktop\ecommerce web\images\product-1.jpg" alt="red t">
+                <img src="C:\Users\HP\Desktop\ecommerce\images\product-1.jpg" alt="red t">
                 <h4>Red Printed Tshirt</h4>
                 <div class="rating">
                     <i class="fa fa-star"aria-hidden="true"></i>
@@ -75,7 +77,7 @@
                 <p>$50.00</p>
             </div>
             <div class="col-4">
-                <img src="C:\Users\HP\Desktop\ecommerce web\images\product-2.jpg" alt="red t">
+                <img src="C:\Users\HP\Desktop\ecommerce\images\product-2.jpg" alt="red t">
                 <h4>Black Snickers</h4>
                 <div class="rating">
                     <i class="fa fa-star"aria-hidden="true"></i>
@@ -87,7 +89,7 @@
                 <p>$250.00</p>
             </div>
             <div class="col-4">
-                <img src="C:\Users\HP\Desktop\ecommerce web\images\product-3.jpg" alt="red t">
+                <img src="C:\Users\HP\Desktop\ecommerce\images\product-3.jpg" alt="red t">
                 <h4>Sweatpants</h4>
                 <div class="rating">
                     <i class="fa fa-star"aria-hidden="true"></i>
@@ -99,7 +101,7 @@
                 <p>$150.00</p>
             </div>
             <div class="col-4">
-                <img src="C:\Users\HP\Desktop\ecommerce web\images\product-4.jpg" alt="red t">
+                <img src="C:\Users\HP\Desktop\ecommerce\images\product-4.jpg" alt="red t">
                 <h4>Navy Blue Printed Tshirt</h4>
                 <div class="rating">
                     <i class="fa fa-star"aria-hidden="true"></i>
@@ -114,7 +116,7 @@
         <h2 class="title">Latest Products</h2>
         <div class="row">
             <div class="col-4">
-                <img src="C:\Users\HP\Desktop\ecommerce web\images\product-5.jpg" alt="red t">
+                <img src="C:\Users\HP\Desktop\ecommerce\images\product-5.jpg" alt="red t">
                 <h4>Snickers</h4>
                 <div class="rating">
                     <i class="fa fa-star"aria-hidden="true"></i>
@@ -126,7 +128,7 @@
                 <p>$350.00</p>
             </div>
             <div class="col-4">
-                <img src="C:\Users\HP\Desktop\ecommerce web\images\product-6.jpg" alt="red t">
+                <img src="C:\Users\HP\Desktop\ecommerce\images\product-6.jpg" alt="red t">
                 <h4>Black Printed Tshirt</h4>
                 <div class="rating">
                     <i class="fa fa-star"aria-hidden="true"></i>
@@ -138,7 +140,7 @@
                 <p>$50.00</p>
             </div>
             <div class="col-4">
-                <img src="C:\Users\HP\Desktop\ecommerce web\images\product-7.jpg" alt="red t">
+                <img src="C:\Users\HP\Desktop\ecommerce\images\product-7.jpg" alt="red t">
                 <h4>Socks</h4>
                 <div class="rating">
                     <i class="fa fa-star"aria-hidden="true"></i>
@@ -150,7 +152,7 @@
                 <p>$30.00</p>
             </div>
             <div class="col-4">
-                <img src="C:\Users\HP\Desktop\ecommerce web\images\product-8.jpg" alt="red t">
+                <img src="C:\Users\HP\Desktop\ecommerce\images\product-8.jpg" alt="red t">
                 <h4>Watch</h4>
                 <div class="rating">
                     <i class="fa fa-star"aria-hidden="true"></i>
@@ -163,5 +165,156 @@
             </div>
         </div>
     </div>
+    <!-- offer -->
+    <div class="offer">
+        <div class="small-container">
+            <div class="row">
+               <div class="col-2">
+                   <img src="C:\Users\HP\Desktop\ecommerce\images\exclusive.png" alt="watch" class="offer-img">
+               </div>
+               <div class="col-2">
+                   <p>Exclusively Available on RedStore</p>
+                   <h1>Smart Band 4</h1>
+                   <small>The Mi Smart Band 4 features a 39.9% larger 
+                       (than Mi Band 3) AMOLED color full-touch display width
+                       adjustable brightness, so everything is clear as can be.
+                   </small><br>
+                   <a href="" class="btn">Buy Now &#8594</a>
+               </div>
+            </div>
+        </div>
+    </div>
+    <!-- testimonial -->
+    <div class="testimonial">
+        <div class="small-container">
+            <div class="row">
+               <div class="col-3">
+                <i class="fa fa-quote-left"aria-hidden="true"></i>
+                   <p>Lorem Ipsum is simply dummy text of the printing
+                       and typesetting industry. Lorem Ipsum has been the industry's 
+                       standard dummy text ever
+                   </p>
+                   <div class="rating">
+                    <i class="fa fa-star"aria-hidden="true"></i>
+                    <i class="fa fa-star"aria-hidden="true"></i>
+                    <i class="fa fa-star"aria-hidden="true"></i>
+                    <i class="fa fa-star"aria-hidden="true"></i>
+                    <i class="fa fa-star-o"aria-hidden="true"></i>
+                   </div>
+                   <img src="C:\Users\HP\Desktop\ecommerce\images\user-1.png" alt="first user">
+                   <h3>Sean Parker</h3>
+               </div>
+               <div class="col-3">
+                <i class="fa fa-quote-left"aria-hidden="true"></i>
+                   <p>Lorem Ipsum is simply dummy text of the printing
+                       and typesetting industry. Lorem Ipsum has been the industry's 
+                       standard dummy text ever
+                   </p>
+                   <div class="rating">
+                    <i class="fa fa-star"aria-hidden="true"></i>
+                    <i class="fa fa-star"aria-hidden="true"></i>
+                    <i class="fa fa-star"aria-hidden="true"></i>
+                    <i class="fa fa-star"aria-hidden="true"></i>
+                    <i class="fa fa-star-o"aria-hidden="true"></i>
+                   </div>
+                   <img src="C:\Users\HP\Desktop\ecommerce\images\user-2.png" alt="first user">
+                   <h3>Mike Smith</h3>
+               </div>
+               <div class="col-3">
+                <i class="fa fa-quote-left"aria-hidden="true"></i>
+                   <p>Lorem Ipsum is simply dummy text of the printing
+                       and typesetting industry. Lorem Ipsum has been the industry's 
+                       standard dummy text ever
+                   </p>
+                   <div class="rating">
+                    <i class="fa fa-star"aria-hidden="true"></i>
+                    <i class="fa fa-star"aria-hidden="true"></i>
+                    <i class="fa fa-star"aria-hidden="true"></i>
+                    <i class="fa fa-star"aria-hidden="true"></i>
+                    <i class="fa fa-star-o"aria-hidden="true"></i>
+                   </div>
+                   <img src="C:\Users\HP\Desktop\ecommerce\images\user-3.png" alt="first user">
+                   <h3>Mabel Joe</h3>
+               </div>
+            </div>
+        </div>
+    </div>
+    <!-- brands -->
+    <div class="brands">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-5">
+                    <img src="C:\Users\HP\Desktop\ecommerce\images\logo-godrej.png" alt="logo">
+                </div>
+                <div class="col-5">
+                    <img src="C:\Users\HP\Desktop\ecommerce\images\logo-oppo.png" alt="logo">
+                </div>
+                <div class="col-5">
+                    <img src="C:\Users\HP\Desktop\ecommerce\images\logo-coca-cola.png" alt="logo">
+                </div>
+                <div class="col-5">
+                    <img src="C:\Users\HP\Desktop\ecommerce\images\logo-paypal.png" alt="logo">
+                </div>
+                <div class="col-5">
+                    <img src="C:\Users\HP\Desktop\ecommerce\images\logo-philips.png" alt="logo">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App from Android and ios mobile phone</p>
+                    <div class="app-logo">
+                        <img src="C:\Users\HP\Desktop\ecommerce\images\play-store.png" alt="play">
+                        <img src="C:\Users\HP\Desktop\ecommerce\images\app-store.png" alt="app">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="C:\Users\HP\Desktop\ecommerce\images\logo-white.png" alt="logo">
+                    <p>Our Purpose Is to Sustainably Make the Pleasure and 
+                        Benefits of Sports Accessible to Many.
+                    </p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instaram</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2020 - Easy Tutorials</p>
+        </div>
+    </div>
+    <script>
+        var MenuItems= document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle(){
+            if(MenuItems.style.maxHeight =="0px")
+            {
+                MenuItems.style.maxHeight ="200px"
+            }
+          else
+          {
+              MenuItems.style.maxHeight = "0px"
+          }
+        }
+    </script>
     </body>
 </html>
